@@ -14,6 +14,11 @@
 		2E71A2422A145E25005AAD73 /* CalendarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A2412A145E25005AAD73 /* CalendarViewTests.swift */; };
 		2E71A24C2A145E25005AAD73 /* CalendarViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A24B2A145E25005AAD73 /* CalendarViewUITests.swift */; };
 		2E71A24E2A145E25005AAD73 /* CalendarViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A24D2A145E25005AAD73 /* CalendarViewUITestsLaunchTests.swift */; };
+		2E71A2602A145EC7005AAD73 /* RoundedConer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A25E2A145EC7005AAD73 /* RoundedConer.swift */; };
+		2E71A2612A145EC7005AAD73 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A25F2A145EC7005AAD73 /* Calendar+Extensions.swift */; };
+		2E71A2632A145EDA005AAD73 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A2622A145EDA005AAD73 /* DateCell.swift */; };
+		2E71A2652A145EE9005AAD73 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A2642A145EE9005AAD73 /* CalendarViewModel.swift */; };
+		2E71A2672A145F04005AAD73 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71A2662A145F04005AAD73 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		2E71A2472A145E25005AAD73 /* CalendarViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E71A24B2A145E25005AAD73 /* CalendarViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewUITests.swift; sourceTree = "<group>"; };
 		2E71A24D2A145E25005AAD73 /* CalendarViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E71A25E2A145EC7005AAD73 /* RoundedConer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedConer.swift; sourceTree = "<group>"; };
+		2E71A25F2A145EC7005AAD73 /* Calendar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		2E71A2622A145EDA005AAD73 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		2E71A2642A145EE9005AAD73 /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		2E71A2662A145F04005AAD73 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2E71A2682A14603C005AAD73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +105,14 @@
 		2E71A22F2A145E24005AAD73 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				2E71A25D2A145EA8005AAD73 /* Utils */,
+				2E71A25C2A145EA0005AAD73 /* ViewModels */,
+				2E71A25B2A145E97005AAD73 /* Components */,
+				2E71A25A2A145E88005AAD73 /* Views */,
 				2E71A2302A145E24005AAD73 /* CalendarViewApp.swift */,
-				2E71A2322A145E24005AAD73 /* ContentView.swift */,
 				2E71A2342A145E25005AAD73 /* Assets.xcassets */,
 				2E71A2362A145E25005AAD73 /* Preview Content */,
+				2E71A2682A14603C005AAD73 /* README.md */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
@@ -125,6 +140,40 @@
 				2E71A24D2A145E25005AAD73 /* CalendarViewUITestsLaunchTests.swift */,
 			);
 			path = CalendarViewUITests;
+			sourceTree = "<group>";
+		};
+		2E71A25A2A145E88005AAD73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E71A2662A145F04005AAD73 /* CalendarView.swift */,
+				2E71A2322A145E24005AAD73 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E71A25B2A145E97005AAD73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2E71A2622A145EDA005AAD73 /* DateCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2E71A25C2A145EA0005AAD73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E71A2642A145EE9005AAD73 /* CalendarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2E71A25D2A145EA8005AAD73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E71A25F2A145EC7005AAD73 /* Calendar+Extensions.swift */,
+				2E71A25E2A145EC7005AAD73 /* RoundedConer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E71A2652A145EE9005AAD73 /* CalendarViewModel.swift in Sources */,
+				2E71A2672A145F04005AAD73 /* CalendarView.swift in Sources */,
 				2E71A2332A145E24005AAD73 /* ContentView.swift in Sources */,
+				2E71A2632A145EDA005AAD73 /* DateCell.swift in Sources */,
+				2E71A2612A145EC7005AAD73 /* Calendar+Extensions.swift in Sources */,
+				2E71A2602A145EC7005AAD73 /* RoundedConer.swift in Sources */,
 				2E71A2312A145E24005AAD73 /* CalendarViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +487,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.coldclouds.CalendarView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +512,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +520,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.coldclouds.CalendarView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
